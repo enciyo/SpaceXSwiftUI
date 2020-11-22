@@ -1,0 +1,6 @@
+framework module Pods_SpaceXSwiftUI {
+  umbrella header "Pods-SpaceXSwiftUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
