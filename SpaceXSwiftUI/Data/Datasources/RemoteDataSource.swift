@@ -9,5 +9,6 @@ import Foundation
 import RxSwift
 protocol RemoteDataSource{
     func getLaunches()-> Single<[Launches]>
+    func getCompanyInfo() -> Single<Company>
 }
 

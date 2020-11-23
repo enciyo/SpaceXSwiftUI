@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE010870256C18ED00091E6F /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01086F256C18ED00091E6F /* TutorialView.swift */; };
+		BE01087D256C33DA00091E6F /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01087C256C33DA00091E6F /* Navigator.swift */; };
+		BE010885256C340C00091E6F /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE010884256C340C00091E6F /* Routes.swift */; };
+		BE01088C256C413100091E6F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01088B256C413100091E6F /* MainView.swift */; };
+		BE01089A256C61E800091E6F /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE010899256C61E800091E6F /* Company.swift */; };
+		BE0108A5256C630300091E6F /* TutorialViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0108A4256C630300091E6F /* TutorialViewState.swift */; };
+		BE0108AF256C655A00091E6F /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01089E256C625A00091E6F /* TutorialViewModel.swift */; };
 		BE4C9DED256AF5A800716027 /* MoyaExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C9DEA256AF5A700716027 /* MoyaExt.swift */; };
 		BE4C9DEE256AF5A800716027 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C9DEC256AF5A800716027 /* RemoteImage.swift */; };
 		BEAD3B2B256AECB6006401B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD3B2A256AECB6006401B3 /* AppDelegate.swift */; };
@@ -49,6 +56,13 @@
 /* Begin PBXFileReference section */
 		1A9466662B6B67889E830A42 /* Pods-SpaceXSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXSwiftUI/Pods-SpaceXSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		9C22E0FB041C71B8A8A72993 /* Pods-SpaceXSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-SpaceXSwiftUI/Pods-SpaceXSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		BE01086F256C18ED00091E6F /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		BE01087C256C33DA00091E6F /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		BE010884256C340C00091E6F /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		BE01088B256C413100091E6F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BE010899256C61E800091E6F /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		BE01089E256C625A00091E6F /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
+		BE0108A4256C630300091E6F /* TutorialViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewState.swift; sourceTree = "<group>"; };
 		BE4C9DEA256AF5A700716027 /* MoyaExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaExt.swift; sourceTree = "<group>"; };
 		BE4C9DEC256AF5A800716027 /* RemoteImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		BEAD3B27256AECB6006401B3 /* SpaceXSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +133,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BE01086E256C18CE00091E6F /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				BEAD3B97256AEE5B006401B3 /* DashboardView.swift */,
+				BEAD3B99256AEE5B006401B3 /* DashboardViewState.swift */,
+				BEAD3B98256AEE5B006401B3 /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		BE010874256C18F200091E6F /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				BE01086F256C18ED00091E6F /* TutorialView.swift */,
+				BE01089E256C625A00091E6F /* TutorialViewModel.swift */,
+				BE0108A4256C630300091E6F /* TutorialViewState.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		BE01087B256C33CD00091E6F /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				BE01087C256C33DA00091E6F /* Navigator.swift */,
+				BE010884256C340C00091E6F /* Routes.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		BE010889256C411B00091E6F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BE01088B256C413100091E6F /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		BE4C9DE9256AF58B00716027 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +212,7 @@
 		BEAD3B29256AECB6006401B3 /* SpaceXSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				BE01087B256C33CD00091E6F /* Navigator */,
 				BE4C9DE9256AF58B00716027 /* Utils */,
 				BEAD3B96256AEE5B006401B3 /* Ui */,
 				BEAD3B8E256AEE4D006401B3 /* Di */,
@@ -224,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				BEAD3B84256AEE46006401B3 /* Launches.swift */,
+				BE010899256C61E800091E6F /* Company.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,9 +301,9 @@
 		BEAD3B96256AEE5B006401B3 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
-				BEAD3B97256AEE5B006401B3 /* DashboardView.swift */,
-				BEAD3B98256AEE5B006401B3 /* DashboardViewModel.swift */,
-				BEAD3B99256AEE5B006401B3 /* DashboardViewState.swift */,
+				BE010889256C411B00091E6F /* Main */,
+				BE010874256C18F200091E6F /* Tutorial */,
+				BE01086E256C18CE00091E6F /* Dashboard */,
 			);
 			path = Ui;
 			sourceTree = "<group>";
@@ -436,13 +489,20 @@
 				BEAD3B88256AEE46006401B3 /* RemoteDataSource.swift in Sources */,
 				BEAD3B9C256AEE5B006401B3 /* DashboardViewState.swift in Sources */,
 				BEAD3B87256AEE46006401B3 /* RemoteDataSourceImp.swift in Sources */,
+				BE0108AF256C655A00091E6F /* TutorialViewModel.swift in Sources */,
 				BEAD3B9B256AEE5B006401B3 /* DashboardViewModel.swift in Sources */,
 				BEAD3B2D256AECB6006401B3 /* SceneDelegate.swift in Sources */,
 				BEAD3B89256AEE46006401B3 /* Launches.swift in Sources */,
+				BE0108A5256C630300091E6F /* TutorialViewState.swift in Sources */,
+				BE010885256C340C00091E6F /* Routes.swift in Sources */,
 				BE4C9DEE256AF5A800716027 /* RemoteImage.swift in Sources */,
+				BE01089A256C61E800091E6F /* Company.swift in Sources */,
+				BE01088C256C413100091E6F /* MainView.swift in Sources */,
 				BEAD3B9A256AEE5B006401B3 /* DashboardView.swift in Sources */,
+				BE01087D256C33DA00091E6F /* Navigator.swift in Sources */,
 				BEAD3B8A256AEE46006401B3 /* NetworkService.swift in Sources */,
 				BEAD3B92256AEE4D006401B3 /* NetworkModule.swift in Sources */,
+				BE010870256C18ED00091E6F /* TutorialView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +552,7 @@
 		BEAD3B4F256AECB8006401B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -541,6 +601,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -553,7 +617,7 @@
 		BEAD3B50256AECB8006401B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -596,6 +660,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

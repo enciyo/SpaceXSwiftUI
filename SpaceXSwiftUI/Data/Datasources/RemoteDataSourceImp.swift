@@ -10,6 +10,7 @@ import RxSwift
 import Moya
 
 class RemoteDataSourceImp : RemoteDataSource {
+    
     var networkProvider: MoyaProvider<NetworkService>
     init(networkProvider:MoyaProvider<NetworkService>) {
         self.networkProvider = networkProvider
@@ -20,6 +21,12 @@ class RemoteDataSourceImp : RemoteDataSource {
         return networkProvider.rx.request(.fetchLaunches)
             .mapArray(Launches.self)
     }
+    
+    func getCompanyInfo() -> Single<Company> {
+        return networkProvider.rx.request(.fetchCompanyInfo)
+            .mapObject(Company.self)
+    }
+    
     
     
 }

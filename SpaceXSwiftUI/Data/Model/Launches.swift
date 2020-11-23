@@ -23,7 +23,7 @@ struct Launches : Codable{
     let flightNumber: Int?
     let name, dateUTC: String?
     let dateUnix: Int?
-    let dateLocal: Date?
+    let date_local: String?
     let datePrecision: String?
     let upcoming: Bool?
     let cores: [Core]?

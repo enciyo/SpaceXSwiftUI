@@ -11,6 +11,7 @@ import Moya
 
 enum NetworkService{
     case fetchLaunches
+    case fetchCompanyInfo
 }
 
 extension NetworkService: TargetType {
@@ -22,6 +23,8 @@ extension NetworkService: TargetType {
         switch self {
         case .fetchLaunches:
             return "/launches"
+        case .fetchCompanyInfo:
+            return "/company"
         }
     }
     

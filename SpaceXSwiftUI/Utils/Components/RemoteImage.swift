@@ -59,6 +59,6 @@ struct RemoteImage : View {
         imageModel
             .image
             .map { Image(uiImage:$0).resizable() }
-            ?? Image(systemName: "loading").resizable()
+            ?? Image(systemName: "-").resizable()
     }
 }

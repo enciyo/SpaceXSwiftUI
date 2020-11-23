@@ -9,5 +9,6 @@ import Foundation
 
 
 let DashboardViewModelProvider : DashboardViewModel = DashboardViewModel(remote: RemoteDataSourceProvider)
+let TutorialViewModelProvider : TutorialViewModel = TutorialViewModel(remote: RemoteDataSourceProvider)
 
 

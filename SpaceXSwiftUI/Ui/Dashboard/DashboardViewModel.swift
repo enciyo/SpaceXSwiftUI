@@ -1,6 +1,6 @@
 //
-//  LoginViewModel.swift
-//  MovieDB
+//  DashboardViewModel.swift
+//  SpaceX
 //
 //  Created by Mustafa Kilic on 29.10.2020.
 //
@@ -33,8 +33,9 @@ class DashboardViewModel : ObservableObject {
         return LaunchUIModel(
             id: data.id ?? "",
             image: data.links?.patch?.small,
-            title: data.name,
-            description : data.details?.description
+            name: data.name,
+            rocketId: data.rocket,
+            dateLocal : data.date_local
         )
     }
 
