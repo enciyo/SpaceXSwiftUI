@@ -8,7 +8,7 @@
 import Foundation
 
 
-let DashboardViewModelProvider : DashboardViewModel = DashboardViewModel(remote: RemoteDataSourceProvider)
+let DashboardViewModelProvider : DashboardViewModel = DashboardViewModel(fetchUsecase: FetchLaunchesUseCaseProvider)
 let TutorialViewModelProvider : TutorialViewModel = TutorialViewModel(remote: RemoteDataSourceProvider)
 
 

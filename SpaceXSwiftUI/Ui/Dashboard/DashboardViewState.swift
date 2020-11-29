@@ -9,15 +9,16 @@ import Foundation
 
 
 struct DashboardViewState{
-    var launches: [LaunchUIModel] = []
+    var launches: [DashboardUIModel] = []
     var isLoading: Bool = false
     var error:String? = nil
 }
 
-struct LaunchUIModel: Identifiable{
+struct DashboardUIModel: Identifiable{
     var id: String
     var image:String? = nil
     var name:String? = nil
-    var rocketId: String? = nil
-    var dateLocal:String? = nil
+    var flightNum: String? = nil
+    var isSuccess: String? = nil
+    var date : String? = nil
 }

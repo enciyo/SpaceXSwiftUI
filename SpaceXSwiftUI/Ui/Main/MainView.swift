@@ -21,9 +21,10 @@ struct MainView : View {
                         .tabItem { Text("Dashboard") }
                     Text("Bravo")
                         .tabItem { Text("Second Tab") }
-                }.transition(.opacity)
+                }.transition(.slide)
             case Pages.Tutorial:
                 TutorialView(viewModel: TutorialViewModelProvider)
+                    .transition(.opacity)
             }
         }
     }

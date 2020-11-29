@@ -10,33 +10,33 @@ import RxSwift
 import Moya
 
 class DashboardViewModel : ObservableObject {
-    private var remote: RemoteDataSource?
-    init(remote:RemoteDataSource) {
-        self.remote = remote
+    private let mFetchLaunchesUseCase: FetchLaunchesUseCase
+    init(fetchUsecase:FetchLaunchesUseCase) {
+        self.mFetchLaunchesUseCase = fetchUsecase
     }
 
-    private let disposeBag = DisposeBag()
     @Published var dashboardViewState : DashboardViewState = DashboardViewState()
+    private let disposeBag = DisposeBag()
+    
 
     func postValue(){
-        self.remote!
-            .getLaunches()
-            .subscribe(onSuccess : { (result : [Launches]) in
-                self.dashboardViewState.launches = result.map({ t in self.mapTo(data: t)})
-            },onError: {t in
-                self.dashboardViewState.error = t.localizedDescription
+        mFetchLaunchesUseCase
+            .invoke()
+            .do(onNext:{next in
+                switch next{
+                case .success(let value):
+                    self.dashboardViewState.launches = value
+                    self.dashboardViewState.isLoading = false
+                case .loading:
+                    self.dashboardViewState.isLoading =  self.dashboardViewState.launches.isEmpty // Multiple call onAppear from view
+                case .failure(let error):
+                    self.dashboardViewState.error = error
+                    self.dashboardViewState.isLoading = false
+                }
             })
+            .subscribe()
             .disposed(by: disposeBag)
     }
     
-    func mapTo(data: Launches) -> LaunchUIModel{
-        return LaunchUIModel(
-            id: data.id ?? "",
-            image: data.links?.patch?.small,
-            name: data.name,
-            rocketId: data.rocket,
-            dateLocal : data.date_local
-        )
-    }
 
 }

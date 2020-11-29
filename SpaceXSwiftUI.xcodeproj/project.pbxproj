@@ -32,6 +32,16 @@
 		BEAD3B9A256AEE5B006401B3 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD3B97256AEE5B006401B3 /* DashboardView.swift */; };
 		BEAD3B9B256AEE5B006401B3 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD3B98256AEE5B006401B3 /* DashboardViewModel.swift */; };
 		BEAD3B9C256AEE5B006401B3 /* DashboardViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD3B99256AEE5B006401B3 /* DashboardViewState.swift */; };
+		BEBB03682573CD0F00FEE865 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB03672573CD0F00FEE865 /* CustomProgressView.swift */; };
+		BEBB036D2573D35500FEE865 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB036C2573D35500FEE865 /* DateExt.swift */; };
+		BEBB037B2573D82E00FEE865 /* DashboardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB037A2573D82E00FEE865 /* DashboardDetailView.swift */; };
+		BEBB03802573DB2800FEE865 /* DashboardDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB037F2573DB2800FEE865 /* DashboardDetailViewModel.swift */; };
+		BEBB03862573DC6300FEE865 /* DashboardDetailViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB03852573DC6300FEE865 /* DashboardDetailViewState.swift */; };
+		BEBB038B2573DCE400FEE865 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB038A2573DCE400FEE865 /* UseCase.swift */; };
+		BEBB03902573DDA400FEE865 /* FetchLaunchesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB038F2573DDA400FEE865 /* FetchLaunchesUseCase.swift */; };
+		BEBB03972573DE0100FEE865 /* LaunchesMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB03962573DE0100FEE865 /* LaunchesMapper.swift */; };
+		BEBB03A42573E2C300FEE865 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB03A32573E2C300FEE865 /* Result.swift */; };
+		BEBB03AC2573E9E600FEE865 /* UseCasesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB03AB2573E9E600FEE865 /* UseCasesProvider.swift */; };
 		BEBC6D43256AF3AA00068333 /* Pods_SpaceXSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E197599D30DD129E5C18D994 /* Pods_SpaceXSwiftUI.framework */; };
 		BEBC6D4C256AF44100068333 /* Pods-SpaceXSwiftUI.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1A9466662B6B67889E830A42 /* Pods-SpaceXSwiftUI.debug.xcconfig */; };
 /* End PBXBuildFile section */
@@ -87,6 +97,16 @@
 		BEAD3B97256AEE5B006401B3 /* DashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		BEAD3B98256AEE5B006401B3 /* DashboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		BEAD3B99256AEE5B006401B3 /* DashboardViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewState.swift; sourceTree = "<group>"; };
+		BEBB03672573CD0F00FEE865 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		BEBB036C2573D35500FEE865 /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		BEBB037A2573D82E00FEE865 /* DashboardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDetailView.swift; sourceTree = "<group>"; };
+		BEBB037F2573DB2800FEE865 /* DashboardDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDetailViewModel.swift; sourceTree = "<group>"; };
+		BEBB03852573DC6300FEE865 /* DashboardDetailViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDetailViewState.swift; sourceTree = "<group>"; };
+		BEBB038A2573DCE400FEE865 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		BEBB038F2573DDA400FEE865 /* FetchLaunchesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchLaunchesUseCase.swift; sourceTree = "<group>"; };
+		BEBB03962573DE0100FEE865 /* LaunchesMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesMapper.swift; sourceTree = "<group>"; };
+		BEBB03A32573E2C300FEE865 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		BEBB03AB2573E9E600FEE865 /* UseCasesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesProvider.swift; sourceTree = "<group>"; };
 		E197599D30DD129E5C18D994 /* Pods_SpaceXSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -175,6 +195,7 @@
 			children = (
 				BE4C9DEB256AF5A800716027 /* Components */,
 				BE4C9DEA256AF5A700716027 /* MoyaExt.swift */,
+				BEBB036C2573D35500FEE865 /* DateExt.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -183,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				BE4C9DEC256AF5A800716027 /* RemoteImage.swift */,
+				BEBB03672573CD0F00FEE865 /* CustomProgressView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -212,6 +234,7 @@
 		BEAD3B29256AECB6006401B3 /* SpaceXSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				BEBB03842573DC2300FEE865 /* Domain */,
 				BE01087B256C33CD00091E6F /* Navigator */,
 				BE4C9DE9256AF58B00716027 /* Utils */,
 				BEAD3B96256AEE5B006401B3 /* Ui */,
@@ -294,6 +317,7 @@
 			children = (
 				BEAD3B8F256AEE4D006401B3 /* ViewModelProvider.swift */,
 				BEAD3B90256AEE4D006401B3 /* NetworkModule.swift */,
+				BEBB03AB2573E9E600FEE865 /* UseCasesProvider.swift */,
 			);
 			path = Di;
 			sourceTree = "<group>";
@@ -301,11 +325,41 @@
 		BEAD3B96256AEE5B006401B3 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				BEBB03792573D81E00FEE865 /* DashboardDetail */,
 				BE010889256C411B00091E6F /* Main */,
 				BE010874256C18F200091E6F /* Tutorial */,
 				BE01086E256C18CE00091E6F /* Dashboard */,
 			);
 			path = Ui;
+			sourceTree = "<group>";
+		};
+		BEBB03792573D81E00FEE865 /* DashboardDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB037A2573D82E00FEE865 /* DashboardDetailView.swift */,
+				BEBB037F2573DB2800FEE865 /* DashboardDetailViewModel.swift */,
+				BEBB03852573DC6300FEE865 /* DashboardDetailViewState.swift */,
+			);
+			path = DashboardDetail;
+			sourceTree = "<group>";
+		};
+		BEBB03842573DC2300FEE865 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB03952573DDF300FEE865 /* Mapper */,
+				BEBB038A2573DCE400FEE865 /* UseCase.swift */,
+				BEBB038F2573DDA400FEE865 /* FetchLaunchesUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BEBB03952573DDF300FEE865 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				BEBB03A32573E2C300FEE865 /* Result.swift */,
+				BEBB03962573DE0100FEE865 /* LaunchesMapper.swift */,
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,19 +540,29 @@
 				BEAD3B2B256AECB6006401B3 /* AppDelegate.swift in Sources */,
 				BE4C9DED256AF5A800716027 /* MoyaExt.swift in Sources */,
 				BEAD3B91256AEE4D006401B3 /* ViewModelProvider.swift in Sources */,
+				BEBB036D2573D35500FEE865 /* DateExt.swift in Sources */,
 				BEAD3B88256AEE46006401B3 /* RemoteDataSource.swift in Sources */,
+				BEBB03902573DDA400FEE865 /* FetchLaunchesUseCase.swift in Sources */,
 				BEAD3B9C256AEE5B006401B3 /* DashboardViewState.swift in Sources */,
+				BEBB03682573CD0F00FEE865 /* CustomProgressView.swift in Sources */,
 				BEAD3B87256AEE46006401B3 /* RemoteDataSourceImp.swift in Sources */,
+				BEBB037B2573D82E00FEE865 /* DashboardDetailView.swift in Sources */,
 				BE0108AF256C655A00091E6F /* TutorialViewModel.swift in Sources */,
 				BEAD3B9B256AEE5B006401B3 /* DashboardViewModel.swift in Sources */,
 				BEAD3B2D256AECB6006401B3 /* SceneDelegate.swift in Sources */,
 				BEAD3B89256AEE46006401B3 /* Launches.swift in Sources */,
 				BE0108A5256C630300091E6F /* TutorialViewState.swift in Sources */,
+				BEBB03972573DE0100FEE865 /* LaunchesMapper.swift in Sources */,
 				BE010885256C340C00091E6F /* Routes.swift in Sources */,
 				BE4C9DEE256AF5A800716027 /* RemoteImage.swift in Sources */,
+				BEBB03862573DC6300FEE865 /* DashboardDetailViewState.swift in Sources */,
+				BEBB03802573DB2800FEE865 /* DashboardDetailViewModel.swift in Sources */,
+				BEBB03AC2573E9E600FEE865 /* UseCasesProvider.swift in Sources */,
 				BE01089A256C61E800091E6F /* Company.swift in Sources */,
+				BEBB038B2573DCE400FEE865 /* UseCase.swift in Sources */,
 				BE01088C256C413100091E6F /* MainView.swift in Sources */,
 				BEAD3B9A256AEE5B006401B3 /* DashboardView.swift in Sources */,
+				BEBB03A42573E2C300FEE865 /* Result.swift in Sources */,
 				BE01087D256C33DA00091E6F /* Navigator.swift in Sources */,
 				BEAD3B8A256AEE46006401B3 /* NetworkService.swift in Sources */,
 				BEAD3B92256AEE4D006401B3 /* NetworkModule.swift in Sources */,

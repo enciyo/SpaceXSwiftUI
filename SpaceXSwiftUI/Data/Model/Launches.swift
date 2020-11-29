@@ -20,9 +20,9 @@ struct Launches : Codable{
     let crew, ships, capsules, payloads: [String?]?
     let launchpad: String?
     let autoUpdate: Bool?
-    let flightNumber: Int?
+    let flight_number: Int?
     let name, dateUTC: String?
-    let dateUnix: Int?
+    let date_utc: String?
     let date_local: String?
     let datePrecision: String?
     let upcoming: Bool?
